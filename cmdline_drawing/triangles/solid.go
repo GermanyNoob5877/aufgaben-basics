@@ -8,15 +8,10 @@ import "fmt"
 // Der rechte Winkel soll links unten liegen und die Seiten sollen
 // vertikal bzw. horizontal verlaufen.
 func DrawSolidTriangle(length int) {
-	fmt.Println("#")
-	for i := 0; i < (length - 2); i++ {
-		fmt.Print("#")
+	for i := 1; i <= length; i++ {
 		for range i {
 			fmt.Print("#")
 		}
-		fmt.Println("#")
-	}
-	for range length {
-		fmt.Print("#")
+		fmt.Println()
 	}
 }
